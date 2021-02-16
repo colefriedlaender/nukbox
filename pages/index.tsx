@@ -16,6 +16,21 @@ export default function Home() {
         songName="Havana"
         artist="Camila Cabello"
       />
+      <TrackListItem
+        ImgSrc="https://i.pinimg.com/736x/5f/d1/b7/5fd1b708f87458c5981b67489ada7c09.jpg"
+        songName="Toosie Slide"
+        artist="Drake"
+      />
+      <TrackListItem
+        ImgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbt3SjkQTXDNwzmrC54V4reJfx8R96ke1z2w&usqp=CAU"
+        songName="Yesterday"
+        artist="Beatles"
+      />
+      <TrackListItem
+        ImgSrc="https://cdn.smehost.net/rockde-deprod/wp-content/uploads/2019/07/H2H-40_Black_2-300x300.jpg"
+        songName="Highway to Hell"
+        artist="AC/DC"
+      />
     </div>
   );
 }
