@@ -1,0 +1,22 @@
+{
+  "tracks": [
+    {
+      "id": "Camila-Cabello_Havana",
+      "ImgSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Havana_%28featuring_Young_Thug%29_%28Official_Single_Cover%29_by_Camila_Cabello.png/220px-Havana_%28featuring_Young_Thug%29_%28Official_Single_Cover%29_by_Camila_Cabello.png",
+      "songName": "Havana",
+      "artist": "Camila Cabello"
+    },
+    {
+      "id": "Toosie_Slide",
+      "ImgSrc": "https://i.pinimg.com/736x/5f/d1/b7/5fd1b708f87458c5981b67489ada7c09.jpg",
+      "songName": "Toosie Slide",
+      "artist": "Drake"
+    },
+    {
+      "id": "Beatles_Yesterday",
+      "ImgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbt3SjkQTXDNwzmrC54V4reJfx8R96ke1z2w&usqp=CAU",
+      "songName": "Yesterday",
+      "artist": "Beatles"
+    }
+  ]
+}

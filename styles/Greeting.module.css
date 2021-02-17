@@ -1,0 +1,9 @@
+.hello {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.name {
+  font-weight: bolder;
+  font-size: 2rem;
+  display: block;
+}
