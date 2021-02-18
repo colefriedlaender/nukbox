@@ -1,15 +1,17 @@
 .container {
   display: grid;
-  background-color: hotpink;
+  background-color: lightblue;
   margin-top: 5vh;
-  margin-left: 32.5vw;
-  width: 35vw;
+  margin-left: 37.5vw;
+  width: 25vw;
   height: 90vh;
   justify-content: start;
   align-content: flex-start;
   border-radius: 3rem;
   border: 0.5rem solid black;
   padding-left: 2rem;
+  padding-bottom: 2rem;
+  overflow-x: auto;
 }
 .list {
   margin: 0;
@@ -17,9 +19,11 @@
 }
 @media (max-width: 850px) {
   .container {
-    background-color: lightblue;
     width: 80vw;
     margin-top: 5vh;
     margin-left: 10vw;
   }
+}
+.container::-webkit-scrollbar {
+  display: none;
 }
