@@ -1,0 +1,17 @@
+.SingleTrack {
+  display: grid;
+}
+.cover {
+  border-radius: 10px;
+}
+.songName {
+  align-self: center;
+  margin: 0;
+}
+.artistName {
+  line-height: 2;
+  display: inline;
+  justify-self: center;
+  color: var(--secundary-color);
+  font-size: smaller;
+}
