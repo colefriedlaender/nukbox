@@ -4,6 +4,7 @@ import Greeting from "../components/greeting";
 import TrackListItem from "../components/TrackListItem";
 import { useEffect, useState } from "react";
 import { APITrack, getTracks } from "../utils/api";
+import Link from "next/link";
 
 export default function Home() {
   const [tracks, setTracks] = useState<APITrack[]>([]);
@@ -14,12 +15,16 @@ export default function Home() {
     });
   }, []);
   const trackItems = tracks.map((track) => (
-    <TrackListItem
-      key={`${track.artist}-${track.songName}`}
-      ImgSrc={track.ImgSrc}
-      songName={track.songName}
-      artist={track.artist}
-    />
+    <Link href={`/tracks/${track.id}`} key={track.id}>
+      <a>
+        <TrackListItem
+          key={`${track.artist}-${track.songName}`}
+          ImgSrc={track.ImgSrc}
+          songName={track.songName}
+          artist={track.artist}
+        />
+      </a>
+    </Link>
   ));
   return (
     <div className={styles.container}>
