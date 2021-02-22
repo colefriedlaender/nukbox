@@ -33,6 +33,7 @@ export default function Home() {
       </Head>
       <Greeting name="Cole" />
       <ul className={styles.list}>{trackItems}</ul>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </div>
   );
 }

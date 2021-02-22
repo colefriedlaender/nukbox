@@ -17,6 +17,7 @@
   border-radius: 20px;
   margin-right: 5%;
   margin-left: 5%;
+  margin-bottom: 5%;
   width: 90%;
 }
 .songName {
@@ -49,7 +50,28 @@
 
 .audioPlayer {
   width: 90%;
-  margin-top: 10%;
+  margin-top: 40%;
   margin-left: 5%;
   margin-right: 5%;
+}
+.likeButton {
+  width: 10%;
+  cursor: pointer;
+  display: inline;
+  padding-left: 5%;
+}
+.addButton {
+  width: 10%;
+  cursor: pointer;
+  display: inline;
+  margin-left: 20%;
+  padding-right: 5%;
+  align-self: center;
+}
+.buttonConatiner {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
