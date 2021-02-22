@@ -18,7 +18,7 @@ export default function Home() {
     <Link href={`/tracks/${track.id}`} key={track.id}>
       <a>
         <TrackListItem
-          key={`${track.artist}-${track.songName}`}
+          key={`${track.id}`}
           ImgSrc={track.ImgSrc}
           songName={track.songName}
           artist={track.artist}
