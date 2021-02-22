@@ -23,9 +23,7 @@
 .songName {
   text-align: center;
   display: inline;
-  margin-top: 5%;
   font-size: 1rem;
-  justify-self: center;
   padding-left: 0;
 }
 .artistName {
@@ -55,22 +53,21 @@
   margin-right: 5%;
 }
 .likeButton {
-  width: 10%;
+  width: 2em;
   cursor: pointer;
   display: inline;
-  padding-left: 5%;
 }
 .addButton {
-  width: 10%;
+  width: 2em;
   cursor: pointer;
   display: inline;
-  margin-left: 20%;
-  padding-right: 5%;
+
+  /* padding-right: 5%; */
   align-self: center;
 }
-.buttonConatiner {
+.buttonsContainer {
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: auto auto auto;
   justify-items: center;
   align-items: center;
   text-align: center;
