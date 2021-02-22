@@ -8,7 +8,12 @@ export type Props = {
   audioSrc: string;
 };
 
-export default function SingleTrack(props: Props) {
+export default function SingleTrack({
+  ImgSrc,
+  songName,
+  artist,
+  audioSrc,
+}: Props) {
   const [likeButton, setLikeButton] = useState(true);
   const like = () => {
     setLikeButton(!likeButton);
@@ -19,14 +24,14 @@ export default function SingleTrack(props: Props) {
   };
   return (
     <div className={styles.SingleTrack}>
-      <img className={styles.cover} src={props.ImgSrc} alt="" />
+      <img className={styles.cover} src={ImgSrc} alt="" />
       <div className={styles.buttonsContainer}>
         <img
           className={styles.addButton}
           src={addButton ? "/add.svg" : "/check.svg"}
           onClick={add}
         />
-        <p className={styles.songName}>{props.songName} - by</p>
+        <p className={styles.songName}>{songName} - by</p>
 
         <img
           className={styles.likeButton}
@@ -34,13 +39,9 @@ export default function SingleTrack(props: Props) {
           onClick={like}
         />
       </div>
-      <span className={styles.artistName}> {props.artist}</span>
+      <span className={styles.artistName}> {artist}</span>
       <div>
-        <audio
-          className={styles.audioPlayer}
-          controls
-          src={props.audioSrc}
-        ></audio>
+        <audio className={styles.audioPlayer} controls src={audioSrc}></audio>
       </div>
     </div>
   );
