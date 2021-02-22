@@ -1,10 +1,8 @@
-// import styles from "../styles/id.module.css";
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
 import { APITrack, getTrack } from "../../utils/api";
 import styles from "../../styles/id.module.css";
 import SingleTrack from "../../components/SingelTrack";
-import BottomBar from "../../components/BottomBar";
 import TopBar from "../../components/TopBar";
 
 export default function Track() {
@@ -34,7 +32,6 @@ export default function Track() {
         artist={track.artist}
         audioSrc={track.audioSrc}
       />
-      {/* <BottomBar /> */}
     </div>
   );
 }
