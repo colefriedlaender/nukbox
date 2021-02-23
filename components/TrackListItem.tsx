@@ -1,12 +1,13 @@
 import styles from "../styles/TrackListItem.module.css";
+import { APITrack } from "../utils/api";
 
 export type Props = {
-  ImgSrc: string;
-  songName: string;
-  artist: string;
+  track: APITrack;
 };
 
-export default function TrackListItem({ ImgSrc, songName, artist }: Props) {
+export default function TrackListItem({
+  track: { ImgSrc, songName, artist },
+}: Props) {
   return (
     <li className={styles.TrackListItem}>
       <img className={styles.coverImg} src={ImgSrc} alt="" />

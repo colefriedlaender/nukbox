@@ -17,12 +17,7 @@ export default function Home() {
   const trackItems = tracks.map((track) => (
     <Link href={`/tracks/${track.id}`} key={track.id}>
       <a>
-        <TrackListItem
-          key={`${track.id}`}
-          ImgSrc={track.ImgSrc}
-          songName={track.songName}
-          artist={track.artist}
-        />
+        <TrackListItem key={`${track.id}`} track={track} />
       </a>
     </Link>
   ));

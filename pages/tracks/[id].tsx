@@ -4,6 +4,7 @@ import { APITrack, getTrack } from "../../utils/api";
 import styles from "../../styles/id.module.css";
 import SingleTrack from "../../components/SingelTrack";
 import TopBar from "../../components/TopBar";
+import AudioPLayer from "../../components/AudioPlayer";
 
 export default function Track() {
   const router = useRouter();
@@ -26,12 +27,8 @@ export default function Track() {
   return (
     <div className={styles.container}>
       <TopBar />
-      <SingleTrack
-        ImgSrc={track.ImgSrc}
-        songName={track.songName}
-        artist={track.artist}
-        audioSrc={track.audioSrc}
-      />
+      <SingleTrack track={track} />
+      <AudioPLayer src={track.audioSrc} />
     </div>
   );
 }
