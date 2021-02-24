@@ -6,8 +6,8 @@
   height: 90vh;
   border-radius: 3rem;
   border: 0.5rem solid black;
-  padding-bottom: 2rem;
-  overflow-x: auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 .SingleTrack {
   display: grid;

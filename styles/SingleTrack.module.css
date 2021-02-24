@@ -9,7 +9,7 @@
   margin: 0;
 }
 .artistName {
-  line-height: 2;
+  line-height: 1;
   display: inline;
   justify-self: center;
   color: var(--secundary-color);
