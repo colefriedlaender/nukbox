@@ -20,6 +20,20 @@
       "songName": "Yellow Submarine",
       "artist": "Beatles",
       "audioSrc": "/The Beatles - Yellow Submarine.mp3"
+    },
+    {
+      "id": "Seve",
+      "ImgSrc": "https://e-cdns-images.dzcdn.net/images/cover/a52145201dd9779cc8dc9a559307e810/500x500.jpg",
+      "songName": "Seve",
+      "artist": "Tez Cady",
+      "audioSrc": "/Seve_Tez-Cadey.mp3"
+    },
+    {
+      "id": "Seven-Nation-Army",
+      "ImgSrc": "https://lastfm.freetls.fastly.net/i/u/770x0/0edf45a371124201a589670a7179e338.jpg",
+      "songName": "Seven Nation Army",
+      "artist": "The White Stripes",
+      "audioSrc": "/The White Stripes  Seven Nation Army.mp3"
     }
   ]
 }
