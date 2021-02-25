@@ -78,7 +78,8 @@
   margin-top: 2%;
   justify-self: center;
   cursor: pointer;
+  filter: blur(10rem);
 }
 .deleteButton:hover {
-  width: 8%;
+  filter: blur(0);
 }
