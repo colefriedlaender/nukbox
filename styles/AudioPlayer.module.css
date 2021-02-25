@@ -14,4 +14,8 @@
 }
 .input {
   width: 100%;
+  background-color: teal;
+}
+.input::-webkit-slider-thumb {
+  color: white;
 }

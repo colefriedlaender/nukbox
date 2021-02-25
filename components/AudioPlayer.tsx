@@ -16,7 +16,7 @@ export default function AudioPLayer({ src }: Pop) {
       audioElement.play();
       intervalRef.current = setInterval(() => {
         setProgress(audioElement.currentTime);
-      }, 2000);
+      }, 5000);
     } else {
       clearInterval(intervalRef.current);
       audioElement.pause();
