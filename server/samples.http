@@ -1,0 +1,20 @@
+### Get all Tracks
+GET http://localhost:3000/api/tracks
+
+### Get one Track
+GET http://localhost:3000/api/tracks/Seve
+
+### Remove one Track
+DELETE  http://localhost:3000/api/tracks/Seven-Nation-Army
+
+### Post one Track
+Post  http://localhost:3000/api/tracks
+Content-Type: application/json
+
+{
+    "id": "Seven-Nation-Army",
+      "ImgSrc": "https://lastfm.freetls.fastly.net/i/u/770x0/0edf45a371124201a589670a7179e338.jpg",
+      "songName": "Seven Nation Army",
+      "artist": "The White Stripes",
+      "audioSrc": "/The White Stripes  Seven Nation Army.mp3"
+}

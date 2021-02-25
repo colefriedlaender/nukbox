@@ -73,3 +73,12 @@
   align-items: center;
   text-align: center;
 }
+.deleteButton {
+  width: 7%;
+  margin-top: 2%;
+  justify-self: center;
+  cursor: pointer;
+}
+.deleteButton:hover {
+  width: 8%;
+}

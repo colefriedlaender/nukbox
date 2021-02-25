@@ -1,6 +1,6 @@
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
-import { APITrack, getTrack } from "../../utils/api";
+import { APITrack, deleteTrack, getTrack } from "../../utils/api";
 import styles from "../../styles/id.module.css";
 import SingleTrack from "../../components/SingelTrack";
 import TopBar from "../../components/TopBar";
@@ -23,11 +23,20 @@ export default function Track() {
   if (!track) {
     return <div>...Loading</div>;
   }
-
+  const handleDeleteClick = async () => {
+    deleteTrack(track.id);
+    history.back();
+  };
   return (
     <div className={styles.container}>
       <TopBar />
       <SingleTrack track={track} />
+      <img
+        className={styles.deleteButton}
+        src="/delete.svg"
+        alt=""
+        onClick={handleDeleteClick}
+      />
       <AudioPLayer src={track.audioSrc} />
     </div>
   );

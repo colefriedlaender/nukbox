@@ -13,11 +13,12 @@
 .song {
   align-self: center;
   margin: 0;
+  color: black;
 }
 .artist {
   line-height: 2;
   justify-self: center;
   display: block;
-  color: black;
+  color: white;
   font-size: smaller;
 }
